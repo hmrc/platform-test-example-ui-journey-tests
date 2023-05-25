@@ -29,7 +29,7 @@ trait BasePage {
     .pollingEvery(Duration.ofSeconds(1))
 
   protected def click(locator: By): Unit = {
-    waitForElementToBeClickable(locator)
+    waitForElementToBePresent(locator)
     findElement(locator).click()
   }
 
@@ -102,9 +102,6 @@ trait BasePage {
 
   private def isSelected(locator: By): Boolean =
     findElement(locator).isSelected
-
-  private def waitForElementToBeClickable(locator: By): WebElement =
-    fluentWait.until(ExpectedConditions.elementToBeClickable(findElement(locator)))
 
   private def waitForElementToBePresent(locator: By): WebElement =
     fluentWait.until(ExpectedConditions.presenceOfElementLocated(locator))
