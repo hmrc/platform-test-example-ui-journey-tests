@@ -1,0 +1,20 @@
+{
+  "add": [
+    {
+      "reason": "This issue is related to the Edge Browser and outside our scope",
+      "contextId": 1,
+      "url": "^.*microsoft.com.*",
+      "ruleId": 10021,
+      "newLevel": -1,
+      "urlIsRegex": true
+    },
+    {
+      "reason": "This issue is related to the Edge Browser and outside our scope",
+      "contextId": 1,
+      "url": "^.*bing.com.*",
+      "ruleId": 10021,
+      "newLevel": -1,
+      "urlIsRegex": true
+    }
+  ]
+}
