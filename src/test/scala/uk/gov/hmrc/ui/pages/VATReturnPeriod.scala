@@ -25,7 +25,6 @@ object VATReturnPeriod extends BasePage {
 
   private val annuallyRadioButton: By  = By.id("vatReturnPeriod")
   private val quarterlyRadioButton: By = By.id("vatReturnPeriod-2")
-  private val continueButton: By       = By.id("continue-button")
 
   def goTo(): Unit =
     get(url)

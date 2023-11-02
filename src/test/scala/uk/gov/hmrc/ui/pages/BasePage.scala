@@ -16,94 +16,11 @@
 
 package uk.gov.hmrc.ui.pages
 
-import org.openqa.selenium.{By, Keys, WebDriver, WebElement}
-import org.openqa.selenium.support.ui.{ExpectedConditions, FluentWait, Select, Wait}
-import uk.gov.hmrc.selenium.webdriver.Driver
+import org.openqa.selenium.By
+import uk.gov.hmrc.selenium.component.PageObject
 
-import java.time.Duration
+trait BasePage extends PageObject {
 
-trait BasePage {
-
-  private def fluentWait: Wait[WebDriver] = new FluentWait[WebDriver](Driver.instance)
-    .withTimeout(Duration.ofSeconds(3))
-    .pollingEvery(Duration.ofSeconds(1))
-
-  protected def click(locator: By): Unit = {
-    waitForElementToBePresent(locator)
-    findElement(locator).click()
-  }
-
-  protected def get(url: String): Unit =
-    Driver.instance.get(url)
-
-  protected def getCurrentUrl: String =
-    Driver.instance.getCurrentUrl
-
-  protected def getPageSource: String =
-    Driver.instance.getPageSource
-
-  protected def getText(locator: By): String = {
-    waitForElementToBePresent(locator)
-    findElement(locator).getText
-  }
-
-  protected def getTitle: String =
-    Driver.instance.getTitle
-
-  protected def sendKeys(locator: By, value: String): Unit = {
-    clear(locator)
-    findElement(locator).sendKeys(value)
-  }
-
-  protected def sendKeys(locator: By, keys: Keys*): Unit = {
-    clear(locator)
-    keys.foreach(key => findElement(locator).sendKeys(key))
-  }
-
-  protected def selectCheckbox(locator: By): Unit =
-    if (!isSelected(locator))
-      click(locator)
-
-  protected def deselectCheckbox(locator: By): Unit =
-    if (isSelected(locator))
-      click(locator)
-
-  protected def selectByValue(locator: By, value: String): Unit = {
-    waitForElementToBePresent(locator)
-    val select: Select = new Select(findElement(locator))
-    select.selectByValue(value)
-  }
-
-  protected def deselectByValue(locator: By, value: String): Unit = {
-    waitForElementToBePresent(locator)
-    val select: Select = new Select(findElement(locator))
-    select.deselectByValue(value)
-  }
-
-  protected def selectByVisibleText(locator: By, value: String): Unit = {
-    waitForElementToBePresent(locator)
-    val select: Select = new Select(findElement(locator))
-    select.selectByVisibleText(value)
-  }
-
-  protected def deselectByVisibleText(locator: By, value: String): Unit = {
-    waitForElementToBePresent(locator)
-    val select: Select = new Select(findElement(locator))
-    select.deselectByVisibleText(value)
-  }
-
-  private def clear(locator: By): Unit = {
-    waitForElementToBePresent(locator)
-    findElement(locator).clear()
-  }
-
-  private def findElement(locator: By): WebElement =
-    Driver.instance.findElement(locator)
-
-  private def isSelected(locator: By): Boolean =
-    findElement(locator).isSelected
-
-  private def waitForElementToBePresent(locator: By): WebElement =
-    fluentWait.until(ExpectedConditions.presenceOfElementLocated(locator))
+  protected val continueButton: By = By.id("continue-button")
 
 }

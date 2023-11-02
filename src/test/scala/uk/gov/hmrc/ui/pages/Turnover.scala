@@ -20,8 +20,7 @@ import org.openqa.selenium.By
 
 object Turnover extends BasePage {
 
-  private val inputField: By     = By.id("turnover")
-  private val continueButton: By = By.id("continue-button")
+  private val inputField: By = By.id("turnover")
 
   def submit(value: String): Unit = {
     sendKeys(inputField, value)
