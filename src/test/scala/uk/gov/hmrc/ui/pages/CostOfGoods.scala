@@ -20,8 +20,7 @@ import org.openqa.selenium.By
 
 object CostOfGoods extends BasePage {
 
-  private val inputField: By     = By.id("costOfGoods")
-  private val continueButton: By = By.id("continue-button")
+  private val inputField: By = By.id("costOfGoods")
 
   def submit(value: String): Unit = {
     sendKeys(inputField, value)
