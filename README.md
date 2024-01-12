@@ -18,21 +18,9 @@ Start `PLATFORM_EXAMPLE_UI_TESTS` services as follows:
 sm2 --start PLATFORM_EXAMPLE_UI_TESTS
 ```
 
-### Dockerized browser container(s)
+### Dockerized browsers
 
-Start a browser Docker container as follows:
-
-* Argument `<browser>` must be `chrome`, `edge` or `firefox`.
-
-```bash
-./run-docker-browser.sh <browser>
-```
-
-### Test inspection and debugging
-
-Connect to `127.0.0.1:5900` via a VNC client to inspect and debug test execution.
-
-If prompted for a password the default is `secret`.
+See [docker-selenium-grid](https://github.com/hmrc/docker-selenium-grid).
 
 ## Tests
 
