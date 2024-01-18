@@ -18,9 +18,9 @@ Start `PLATFORM_EXAMPLE_UI_TESTS` services as follows:
 sm2 --start PLATFORM_EXAMPLE_UI_TESTS
 ```
 
-### Dockerized browsers
+### Docker Selenium Grid
 
-See [docker-selenium-grid](https://github.com/hmrc/docker-selenium-grid).
+Confirm that [docker-selenium-grid](https://github.com/hmrc/docker-selenium-grid) is up-to-date and follow the provided [instructions](https://github.com/hmrc/docker-selenium-grid/blob/main/README.md).
 
 ## Tests
 
