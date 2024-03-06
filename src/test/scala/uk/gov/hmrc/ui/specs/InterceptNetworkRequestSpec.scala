@@ -16,43 +16,64 @@
 
 package uk.gov.hmrc.ui.specs
 
-import org.openqa.selenium.devtools.{HasDevTools, NetworkInterceptor}
+import io.undertow.Undertow
+import io.undertow.server.{HttpHandler, HttpServerExchange}
+import io.undertow.util.{Headers, StatusCodes}
+import org.openqa.selenium.devtools.NetworkInterceptor
 import org.openqa.selenium.remote.Augmenter
 import org.openqa.selenium.remote.http.{Contents, HttpResponse, Route}
 import uk.gov.hmrc.configuration.TestEnvironment
 import uk.gov.hmrc.selenium.webdriver.Driver
+
+import scala.util.Using
 
 class InterceptNetworkRequestSpec extends BaseSpec {
 
   Feature("Intercept network requests") {
 
     Scenario("intercept what would be a 404 and send a response instead") {
-      val driver               = new Augmenter().augment(Driver.instance)
-      val pageThatDoesNotExist = TestEnvironment.url("vat-flat-rate-calculator-frontend") + "/404"
+      val redirectionTarget     = TestEnvironment.url("vat-flat-rate-calculator-frontend")
+      val redirectionServerPort = 6001 // must be a port mapped additionally by jenkins for this test as not via sm2
+      val redirectionServerUrl  = s"http://localhost:$redirectionServerPort"
+      val redirectionServer     = Undertow
+        .builder()
+        .addHttpListener(redirectionServerPort, "localhost")
+        .setHandler(new HttpHandler() {
+          override def handleRequest(exchange: HttpServerExchange): Unit = {
+            exchange.setStatusCode(StatusCodes.FOUND);
+            exchange.getResponseHeaders.put(Headers.LOCATION, redirectionTarget);
+            exchange.endExchange()
+          }
+        })
+        .build();
+      redirectionServer.start();
 
-      Given("page that does not exist")
-      driver.get(pageThatDoesNotExist)
-      driver.getPageSource should include("This page can’t be found")
+      Given("requests are redirected")
+      Driver.instance.get(redirectionServerUrl)
+      Driver.instance.getCurrentUrl should be(redirectionTarget)
+      Driver.instance.getPageSource should not include "blocked by selenium"
 
-      And("I intercept requests to that page and return 'Hello, World!'")
-      val devTools    = driver.asInstanceOf[HasDevTools].getDevTools
-      devTools.createSession()
-      val interceptor = new NetworkInterceptor(
-        driver,
-        Route
-          .matching(req => req.getUri.endsWith("/404"))
-          .to(() => req => new HttpResponse().setContent(Contents.utf8String("Hello, World!")))
-      )
+      And("I intercept redirection requests and return 'blocked by selenium'")
+      def withBlockedUrl(blockedUrl: String)(useWebDriver: => Unit) =
+        Using(
+          new NetworkInterceptor(
+            new Augmenter().augment(Driver.instance),
+            Route
+              .matching(req => req.getUri.equals(blockedUrl))
+              .to(() => req => new HttpResponse().setContent(Contents.utf8String("blocked by selenium")))
+          )
+        )(_ => useWebDriver)
 
-      When("I revisit the intercepted page")
-      driver.get(pageThatDoesNotExist)
+      When("I revisit the intercepted redirection url")
+      withBlockedUrl(redirectionTarget) {
+        Driver.instance.get(redirectionServerUrl)
+      }
 
-      Then("I see 'Hello, World!'")
-      println(driver.getPageSource)
-      driver.getPageSource should include("Hello, World!")
+      Then("I see 'blocked by selenium'")
+      Driver.instance.getCurrentUrl should be(redirectionTarget)
+      Driver.instance.getPageSource should include("blocked by selenium")
 
-      interceptor.close()
-      devTools.close()
+      redirectionServer.stop()
     }
 
   }
