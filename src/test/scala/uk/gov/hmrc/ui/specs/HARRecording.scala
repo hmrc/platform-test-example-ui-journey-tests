@@ -20,6 +20,7 @@ import com.blibli.oss.qa.util.services.NetworkListener
 import org.scalatest.{Documenting, Outcome, TestSuite, TestSuiteMixin}
 import uk.gov.hmrc.selenium.webdriver.Driver
 import org.openqa.selenium.io.FileHandler.createDir
+import org.openqa.selenium.remote.Augmenter
 
 trait HARRecording extends TestSuiteMixin with Documenting { this: TestSuite =>
 
@@ -27,7 +28,8 @@ trait HARRecording extends TestSuiteMixin with Documenting { this: TestSuite =>
     val testName        = test.name.replaceAll(" ", "-").replaceAll(":", "")
     val outputDir       = "./target/test-reports/har-recordings"
     createDir(new java.io.File(outputDir))
-    val networkListener = new NetworkListener(Driver.instance, s"$outputDir/$testName.har")
+    val networkListener = new NetworkListener(new Augmenter().augment(Driver.instance), s"$outputDir/$testName.har")
+    networkListener.start()
     val testOutcome     = super.withFixture(test)
     networkListener.createHarFile()
     testOutcome
