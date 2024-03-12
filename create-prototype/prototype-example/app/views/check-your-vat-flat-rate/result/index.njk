@@ -1,0 +1,34 @@
+
+{% extends "layouts/main.html" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+ <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-panel govuk-panel--confirmation">
+   <h1 class="govuk-panel__title" id="resultOutcome">You can use the 16.5% VAT flat rate</h1>
+  </div>
+  <div class="govuk-form-group">
+   <p class="govuk-inset-text" id="resultSummary">Based on your answers, you are a limited cost business. This is because the cost of your goods for this year was under Â£1,000.</p>
+  </div>
+  <div class="govuk-form-group">
+   <strong class="govuk-body govuk-!-font-weight-bold">You may need to do this calculation for every VAT period</strong>
+   <section class="govuk-form-group">
+    <details>
+     <summary><span class="summary">Are you in your first year of VAT registration?</span></summary>
+     <div class="govuk-inset-text">
+      <p class="govuk-body">Apply a 1% discount in your first year of VAT registration.</p>
+     </div>
+    </details>
+   </section>
+  </div>
+  <div class="govuk-form-group">
+   <h2 class="govuk-heading-m">What happens next?</h2>
+   <p class="govuk-body">Use this rate from 1 April 2017 when you do your VAT return.</p>
+   <p class="govuk-body">If you're doing your VAT return <a class="govuk-link" href="http://localhost:9020/business-account" rel="external" target="_blank">go to your business account (opens in new tab)</a></p>
+   <p class="govuk-body">You may want to <a href="http://www.gov.uk/vat-flat-rate-scheme/join-or-leave-the-scheme" class="govuk-link" rel="noreferrer noopener" target="_blank">join or leave the Flat Rate Scheme (opens in new tab)</a></p>
+   <p class="govuk-body">You may want to <a href="http://www.gov.uk/vat-registration/cancel-registration" class="govuk-link" rel="noreferrer noopener" target="_blank">deregister from VAT (opens in new tab)</a></p>
+   <p class="govuk-body" id="feedback-survey-message"><a class="govuk-link" id="feedback-survey-link" href="/check-your-vat-flat-rate/feedback-survey">What did you think of this service?</a></p>
+  </div><a lang="en" hreflang="en" class="govuk-link hmrc-report-technical-issue " rel="noreferrer noopener" target="_blank" href="http://localhost:9250/contact/report-technical-problem?newTab=true&amp;service=VFR&amp;referrerUrl=%2Fcheck-your-vat-flat-rate%2Fresult">Is this page not working properly? (opens in new tab)</a>
+ </div>
+</div>
+{% endblock %}

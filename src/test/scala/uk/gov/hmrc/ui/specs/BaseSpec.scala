@@ -27,7 +27,8 @@ trait BaseSpec
     with Matchers
     with BeforeAndAfterEach
     with Browser
-    with ScreenshotOnFailure {
+    with ScreenshotOnFailure
+    with HARRecording {
 
   override def beforeEach(): Unit =
     startBrowser()
