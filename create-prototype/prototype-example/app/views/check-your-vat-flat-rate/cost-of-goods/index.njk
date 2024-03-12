@@ -1,0 +1,39 @@
+
+{% extends "layouts/main.html" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+ <div class="govuk-grid-column-two-thirds">
+  <h1 class="govuk-heading-l">What was your cost of goods for the year including VAT in pounds?</h1>
+  <div class="form-group">
+   <p>Goods are moveable items or materials exclusively used in your business. You can also include gas and electricity. If you're estimating, give realistic figures.</p>
+  </div>
+  <h2 class="govuk-heading-m">Don't include:</h2>
+  <ul class="govuk-list govuk-list--bullet">
+   <li>any services - which is anything that isn't goods</li>
+   <li>expenses like travel and accommodation</li>
+   <li>food and drink eaten by yourself or your staff</li>
+   <li>vehicle costs including fuel unless you're in the transport business using your own, or a leased vehicle</li>
+   <li>rent, internet, phone bills and accountancy fees</li>
+   <li>gifts, promotional items and donations</li>
+   <li>goods you will resell or hire out unless this is your main business activity</li>
+   <li>training and memberships</li>
+   <li>capital items for example office equipment, laptops, mobile phones and tablets</li>
+  </ul>
+  <div class="form-group">
+   <p class="govuk-body">You can find out more about the <a href="http://www.gov.uk/government/publications/vat-notice-733-flat-rate-scheme-for-small-businesses/vat-notice-733-flat-rate-scheme-for-small-businesses#section4" class="govuk-link" rel="noreferrer noopener" target="_blank">VAT Flat Rate Scheme (opens in new tab)</a> including examples of goods, services and how often to use this tool.</p>
+  </div>
+  <form method="POST" novalidate action="/check-your-vat-flat-rate/result">
+   <input type="hidden" name="csrfToken" value="9fd05a5b719aa970d22ac6cdbcc5fc5cc6d0c1f3-1710244904415-665bb7cad9b782e6a9501093">
+   <div class="govuk-form-group">
+    <label class="govuk-label govuk-visually-hidden" for="costOfGoods"> What was your cost of goods for the year including VAT in pounds? </label>
+    <div class="govuk-input__wrapper">
+     <div class="govuk-input__prefix" aria-hidden="true">
+      Â£
+     </div><input class="govuk-input govuk-input--width-5" id="costOfGoods" name="costOfGoods" type="text">
+    </div>
+   </div><button id="continue-button" class="govuk-button" data-module="govuk-button" type="submit">Continue</button>
+  </form><a lang="en" hreflang="en" class="govuk-link hmrc-report-technical-issue " rel="noreferrer noopener" target="_blank" href="http://localhost:9250/contact/report-technical-problem?newTab=true&amp;service=VFR&amp;referrerUrl=%2Fcheck-your-vat-flat-rate%2Fcost-of-goods">Is this page not working properly? (opens in new tab)</a>
+ </div>
+</div>
+{% endblock %}

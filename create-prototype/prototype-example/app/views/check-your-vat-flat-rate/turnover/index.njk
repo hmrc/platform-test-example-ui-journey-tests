@@ -1,0 +1,23 @@
+
+{% extends "layouts/main.html" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+ <div class="govuk-grid-column-two-thirds">
+  <form method="POST" novalidate action="/check-your-vat-flat-rate/cost-of-goods">
+   <input type="hidden" name="csrfToken" value="d981633e8273cf46ce3948d0fdd48cbe5ef68f47-1710244903981-665bb7cad9b782e6a9501093">
+   <div class="govuk-form-group">
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="turnover"> What was your turnover for the year including VAT in pounds? </label></h1>
+    <div id="turnover-hint" class="govuk-hint">
+     This is the total sales of all goods and services. If you're estimating, give realistic figures.
+    </div>
+    <div class="govuk-input__wrapper">
+     <div class="govuk-input__prefix" aria-hidden="true">
+      Â£
+     </div><input class="govuk-input govuk-input--width-5" id="turnover" name="turnover" type="text" aria-describedby="turnover-hint">
+    </div>
+   </div><button id="continue-button" class="govuk-button" data-module="govuk-button" type="submit">Continue</button>
+  </form><a lang="en" hreflang="en" class="govuk-link hmrc-report-technical-issue " rel="noreferrer noopener" target="_blank" href="http://localhost:9250/contact/report-technical-problem?newTab=true&amp;service=VFR&amp;referrerUrl=%2Fcheck-your-vat-flat-rate%2Fturnover">Is this page not working properly? (opens in new tab)</a>
+ </div>
+</div>
+{% endblock %}

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BspLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="create-prototype" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="file:$PROJECT_DIR$/.scala-build/?id=create-prototype_bd2c96d2de" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62007a0e-cb85-42bb-86d2-c36abf5a90db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.bsp/scala-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bsp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__Saxon_HE_9_6_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__commons_codec_1_16_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__commons_compress_1_25_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__commons_fileupload_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__commons_io_2_15_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__core_3_1_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__core_3_1_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__core_3_4_0_0_M6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__cssvalidator_1_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__dequeutilites_4_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__driver_1_42_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__driver_bundle_1_42_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__fansi_3_0_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__galimatias_0_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__geny_3_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__gson_2_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__htmlparser_1_4_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__httpclient_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__httpcore_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__icu4j_58_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__isorelax_20030108.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jackson_annotations_2_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jackson_core_2_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jackson_databind_2_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jetty_continuation_9_4_18_v20190429.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jetty_http_9_4_18_v20190429.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jetty_io_9_4_18_v20190429.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jetty_security_9_4_18_v20190429.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jetty_server_9_4_18_v20190429.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jetty_servlets_9_4_18_v20190429.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jetty_util_9_4_18_v20190429.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jetty_util_ajax_9_4_18_v20190429.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__jing_20200702VNU.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__json_common_3_4_0_0_M6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__junit_interface_1_0_0_M10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__langdetect_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__munit_3_1_0_0_M10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__os_lib_3_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__playwright_1_42_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__playwright_4_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__pprint_3_0_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__salvation_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__scala3_library_3_3_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__scala_library_2_13_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__semanticdb_javac_0_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__sourcecode_3_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__test_interface_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__toolkit_3_0_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__toolkit_test_3_0_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__ujson_3_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__upack_3_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__upickle_3_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__upickle_3_4_0_0_M6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__upickle_core_3_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__upickle_implicits_3_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__validator_20_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/BSP__ws_3_1_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/create-prototype_bd2c96d2de.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/bloop-internal-classes/main-VOUj64gQSWGjku6J7ybpIA==/CreatePrototype$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/bloop-internal-classes/main-VOUj64gQSWGjku6J7ybpIA==/CreatePrototype$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/bloop-internal-classes/main-VOUj64gQSWGjku6J7ybpIA==/CreatePrototype$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/bloop-internal-classes/main-VOUj64gQSWGjku6J7ybpIA==/VNU$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/bloop-internal-classes/main-VOUj64gQSWGjku6J7ybpIA==/VNU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/bloop-internal-classes/main-VOUj64gQSWGjku6J7ybpIA==/VNU.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/bloop-internal-classes/main-VOUj64gQSWGjku6J7ybpIA==/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/bloop-internal-classes/main-VOUj64gQSWGjku6J7ybpIA==/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2-analysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/bloop-internal-classes/main-aP1JVyvtQ-a_N_WNGBws-Q==/CreatePrototype$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/bloop-internal-classes/main-aP1JVyvtQ-a_N_WNGBws-Q==/CreatePrototype$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/bloop-internal-classes/main-aP1JVyvtQ-a_N_WNGBws-Q==/CreatePrototype$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/bloop-internal-classes/main-aP1JVyvtQ-a_N_WNGBws-Q==/VNU$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/bloop-internal-classes/main-aP1JVyvtQ-a_N_WNGBws-Q==/VNU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/bloop-internal-classes/main-aP1JVyvtQ-a_N_WNGBws-Q==/VNU.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/bloop-internal-classes/main-aP1JVyvtQ-a_N_WNGBws-Q==/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/bloop-internal-classes/main-aP1JVyvtQ-a_N_WNGBws-Q==/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2-analysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_425d53ccdd_16a0b5fda4-d2c7eda4b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_65f235aa96_0549430e39-d2c7eda4b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/bloop-internal-classes/main-NxkpujIxTsW3BCoQgdMQXw==/CreatePrototype$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/bloop-internal-classes/main-NxkpujIxTsW3BCoQgdMQXw==/CreatePrototype$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/bloop-internal-classes/main-NxkpujIxTsW3BCoQgdMQXw==/CreatePrototype$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/bloop-internal-classes/main-NxkpujIxTsW3BCoQgdMQXw==/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/bloop-internal-classes/main-NxkpujIxTsW3BCoQgdMQXw==/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/create-prototype_65f235aa96_0549430e39-d2c7eda4b2-analysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_792e2c12d0_9bc78b2bf6-d2c7eda4b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de-test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de/bloop-internal-classes/main-mnoqls6sThKS-JfkJhyzhQ==/CreatePrototype$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de/bloop-internal-classes/main-mnoqls6sThKS-JfkJhyzhQ==/CreatePrototype$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de/bloop-internal-classes/main-mnoqls6sThKS-JfkJhyzhQ==/CreatePrototype$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de/bloop-internal-classes/main-mnoqls6sThKS-JfkJhyzhQ==/META-INF/semanticdb/CreatePrototype.scala.semanticdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de/bloop-internal-classes/main-mnoqls6sThKS-JfkJhyzhQ==/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de/bloop-internal-classes/main-mnoqls6sThKS-JfkJhyzhQ==/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/.bloop/create-prototype_bd2c96d2de/create-prototype_bd2c96d2de-analysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/classes/main/CreatePrototype$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/classes/main/CreatePrototype$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/classes/main/CreatePrototype$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/classes/main/VNU$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/classes/main/VNU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/classes/main/VNU.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/classes/main/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_0314ea3cd4_c2f2db5c7d-d2c7eda4b2/classes/main/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/classes/main/CreatePrototype$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/classes/main/CreatePrototype$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/classes/main/CreatePrototype$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/classes/main/VNU$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/classes/main/VNU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/classes/main/VNU.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/classes/main/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_127a95de0c_6c903f7bbb-d2c7eda4b2/classes/main/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/classes/main/CreatePrototype$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/classes/main/CreatePrototype$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/classes/main/CreatePrototype$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/classes/main/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/create-prototype_65f235aa96_0549430e39-d2c7eda4b2/classes/main/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/ide-inputs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scala-build/ide-options-v2.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="BSP">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="create-prototype" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="create-prototype" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2daeA4JaWPeUVYVX5j8j7Wz84lX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "oscar-hackday",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="create-prototype_bd2c96d2de" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" CHOSEN_TARGET="file:$PROJECT_DIR$/.scala-build/?id=create-prototype_bd2c96d2de" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-53826d6a" />
+        <option value="jdk-20.0.2-corretto-20.0.2.1-4caba194b151-d89c1816" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62007a0e-cb85-42bb-86d2-c36abf5a90db" name="Changes" comment="" />
+      <created>1710250469458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710250469458</updated>
+      <workItem from="1710250470510" duration="8808000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
