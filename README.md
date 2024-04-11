@@ -18,10 +18,6 @@ Start `PLATFORM_TEST_EXAMPLE_UI_JOURNEY_TESTS` services as follows:
 sm2 --start PLATFORM_TEST_EXAMPLE_UI_JOURNEY_TESTS
 ```
 
-### Docker Selenium Grid
-
-Confirm that [docker-selenium-grid](https://github.com/hmrc/docker-selenium-grid) is up-to-date and follow the provided [instructions](https://github.com/hmrc/docker-selenium-grid/blob/main/README.md).
-
 ## Tests
 
 Run tests as follows:
