@@ -20,13 +20,22 @@ sm2 --start PLATFORM_TEST_EXAMPLE_UI_JOURNEY_TESTS
 
 ## Tests
 
-Run tests as follows:
+Run tests in command line as follows:
 
 * Argument `<browser>` must be `chrome`, `edge`, or `firefox`.
 * Argument `<environment>` must be `local`, `dev`, `qa` or `staging`.
 
 ```bash
-sbt clean -Dbrowser="<browser>" -Denvironment="<environment>" "testOnly uk.gov.hmrc.ui.specs.*" testReport
+sbt clean -Dbrowser="<browser>" -Denvironment="<environment>" test testReport
+```
+
+Run tests as script as follows:
+
+* Argument `<browser>` must be `chrome`, `edge`, or `firefox`.
+* Argument `<environment>` must be `local`, `dev`, `qa` or `staging`.
+
+```bash
+./run-tests.sh <browser> <environment>
 ```
 
 ## Scalafmt
