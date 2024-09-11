@@ -26,7 +26,7 @@ Run tests as follows:
 * Argument `<environment>` must be `local`, `dev`, `qa` or `staging`.
 
 ```bash
-sbt clean -Dbrowser="<browser>" -Denvironment="<environment>" "testOnly uk.gov.hmrc.ui.specs.*" testReport
+sbt clean -Dbrowser="<browser>" -Denvironment="<environment>" test testReport
 ```
 
 ## Scalafmt
