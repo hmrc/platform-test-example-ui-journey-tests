@@ -9,7 +9,7 @@ Example UI journey tests.
 Start Mongo Docker container as follows:
 
 ```bash
-docker run --rm -d -p 27017:27017 --name mongo percona/percona-server-mongodb:5.0
+docker run --rm -d -p 27017:27017 --name mongo percona/percona-server-mongodb:6.0
 ```
 
 Start `PLATFORM_TEST_EXAMPLE_UI_JOURNEY_TESTS` services as follows:
