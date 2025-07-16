@@ -30,7 +30,9 @@ class CheckVATFlatRateSpec extends BaseSpec {
     Scenario("User pays annually and is a limited cost business") {
 
       Given("my VAT return period is annual")
-      vatReturnPeriod.goTo()
+      // added a fluentwait for geturl
+      // vatReturnPeriod.goTo()
+      vatReturnPeriod.fluentGoTo()
       vatReturnPeriod.submit("annually")
 
       And("my turnover for the year is £1000")
@@ -47,7 +49,8 @@ class CheckVATFlatRateSpec extends BaseSpec {
     Scenario("User pays annually and is not a limited cost business") {
 
       Given("my VAT return period is annual")
-      vatReturnPeriod.goTo()
+      //   vatReturnPeriod.goTo()
+      vatReturnPeriod.fluentGoTo()
       vatReturnPeriod.submit("annually")
 
       And("my turnover for the year is £1000")
@@ -64,7 +67,8 @@ class CheckVATFlatRateSpec extends BaseSpec {
     Scenario("User pays quarterly and is a limited cost business") {
 
       Given("my VAT return period is quarterly")
-      vatReturnPeriod.goTo()
+      // vatReturnPeriod.goTo()
+      vatReturnPeriod.fluentGoTo()
       vatReturnPeriod.submit("quarterly")
 
       And("my turnover for the quarter is £1000")
@@ -81,7 +85,8 @@ class CheckVATFlatRateSpec extends BaseSpec {
     Scenario("User pays quarterly and is not a limited cost business") {
 
       Given("my VAT return period is quarterly")
-      vatReturnPeriod.goTo()
+      // vatReturnPeriod.goTo()
+      vatReturnPeriod.fluentGoTo()
       vatReturnPeriod.submit("quarterly")
 
       And("my turnover for the quarter is £1000")
