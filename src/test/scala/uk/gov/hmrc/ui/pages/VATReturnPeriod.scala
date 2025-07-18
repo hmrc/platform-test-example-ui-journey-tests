@@ -27,10 +27,7 @@ object VATReturnPeriod extends BasePage {
   private val annuallyRadioButton: By  = By.id("vatReturnPeriod")
   private val quarterlyRadioButton: By = By.id("vatReturnPeriod-2")
 
-  def goTo(): Unit =
-    get(url)
-
-  def fluentGoTo(): Unit = {
+  def goTo(): Unit = {
     get(url)
     fluentWait.until(ExpectedConditions.urlContains(url))
   }
