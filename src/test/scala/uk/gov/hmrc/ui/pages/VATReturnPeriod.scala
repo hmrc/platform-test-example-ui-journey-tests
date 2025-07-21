@@ -17,6 +17,7 @@
 package uk.gov.hmrc.ui.pages
 
 import org.openqa.selenium.By
+import org.openqa.selenium.support.ui.ExpectedConditions
 import uk.gov.hmrc.configuration.TestEnvironment
 
 object VATReturnPeriod extends BasePage {
@@ -26,8 +27,10 @@ object VATReturnPeriod extends BasePage {
   private val annuallyRadioButton: By  = By.id("vatReturnPeriod")
   private val quarterlyRadioButton: By = By.id("vatReturnPeriod-2")
 
-  def goTo(): Unit =
+  def goTo(): Unit = {
     get(url)
+    fluentWait.until(ExpectedConditions.urlContains(url))
+  }
 
   def submit(value: String): Unit = {
     value match {
