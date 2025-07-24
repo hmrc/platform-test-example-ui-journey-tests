@@ -18,6 +18,8 @@ package uk.gov.hmrc.ui.specs
 
 import uk.gov.hmrc.ui.pages.{CostOfGoods, Result, Turnover, VATReturnPeriod}
 
+import uk.gov.hmrc.ui.specs.tags.ExampleTaggedTest
+
 class CheckVATFlatRateSpec extends BaseSpec {
 
   private val result          = Result
@@ -27,7 +29,9 @@ class CheckVATFlatRateSpec extends BaseSpec {
 
   Feature("Check VAT flat rate") {
 
-    Scenario("User pays annually and is a limited cost business") {
+    // This test is tagged with 'ExampleTaggedTest' to demonstrate how to use ScalaTest tags.
+    // To run tagged tests only, use the sbt command shown in run-tests.sh.
+    Scenario("User pays annually and is a limited cost business", ExampleTaggedTest) {
 
       Given("my VAT return period is annual")
       vatReturnPeriod.goTo()
