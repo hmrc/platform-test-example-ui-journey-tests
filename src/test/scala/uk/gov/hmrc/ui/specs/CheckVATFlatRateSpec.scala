@@ -40,8 +40,11 @@ class CheckVATFlatRateSpec extends BaseSpec with TableDrivenPropertyChecks {
 
     forAll(vatFlatRateScenarios) {
       (vatReturnPeriod: String, turnover: String, costOfGoods: String, expectedOutcome: String) =>
+        // This test is tagged with 'ExampleTaggedTest' to demonstrate how to use ScalaTest tags.
+        // To run tagged tests only, use the sbt command shown in run-tests.sh.
         Scenario(
-          s"User pays $vatReturnPeriod with turnover £$turnover and cost of goods £$costOfGoods"
+          s"User pays $vatReturnPeriod with turnover £$turnover and cost of goods £$costOfGoods",
+          ExampleTaggedTest
         ) {
 
           Given(s"My VAT return period is $vatReturnPeriod")
