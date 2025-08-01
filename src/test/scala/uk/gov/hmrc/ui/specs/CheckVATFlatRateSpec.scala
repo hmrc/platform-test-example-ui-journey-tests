@@ -17,88 +17,46 @@
 package uk.gov.hmrc.ui.specs
 
 import uk.gov.hmrc.ui.pages.{CostOfGoods, Result, Turnover, VATReturnPeriod}
-
 import uk.gov.hmrc.ui.specs.tags.ExampleTaggedTest
+import org.scalatest.prop.TableDrivenPropertyChecks
 
-class CheckVATFlatRateSpec extends BaseSpec {
+class CheckVATFlatRateSpec extends BaseSpec with TableDrivenPropertyChecks {
 
-  private val result          = Result
-  private val turnover        = Turnover
-  private val costOfGoods     = CostOfGoods
-  private val vatReturnPeriod = VATReturnPeriod
+  private val resultPage      = Result
+  private val turnoverPage    = Turnover
+  private val costOfGoodsPage = CostOfGoods
+  private val periodPage      = VATReturnPeriod
 
-  Feature("Check VAT flat rate") {
+  Feature("User should see correct VAT flat rate") {
 
-    // This test is tagged with 'ExampleTaggedTest' to demonstrate how to use ScalaTest tags.
-    // To run tagged tests only, use the sbt command shown in run-tests.sh.
-    Scenario("User pays annually and is a limited cost business", ExampleTaggedTest) {
+    val vatFlatRateScenarios =
+      Table(
+        ("vatReturnPeriod", "turnover", "costOfGoods", "expectedOutcome"),
+        ("annually", "1000", "999", resultPage.useSetVATFlatRate),
+        ("annually", "1000", "1000", resultPage.useUniqueVATFlatRate),
+        ("quarterly", "1000", "249", resultPage.useSetVATFlatRate),
+        ("quarterly", "1000", "250", resultPage.useUniqueVATFlatRate)
+      )
 
-      Given("my VAT return period is annual")
-      vatReturnPeriod.goTo()
-      vatReturnPeriod.submit("annually")
+    forAll(vatFlatRateScenarios) {
+      (vatReturnPeriod: String, turnover: String, costOfGoods: String, expectedOutcome: String) =>
+        Scenario(
+          s"User pays $vatReturnPeriod with turnover £$turnover and cost of goods £$costOfGoods"
+        ) {
 
-      And("my turnover for the year is £1000")
-      turnover.submit("1000")
+          Given(s"My VAT return period is $vatReturnPeriod")
+          periodPage.goTo()
+          periodPage.submit(vatReturnPeriod)
 
-      When("my cost of goods for the year is £999")
-      costOfGoods.submit("999")
+          And(s"My turnover for the period is £$turnover")
+          turnoverPage.submit(turnover)
 
-      Then("I can use the 16.5% VAT flat rate")
-      result.outcome() should be(result.useSetVATFlatRate)
+          When(s"My cost of goods for the period is £$costOfGoods")
+          costOfGoodsPage.submit(costOfGoods)
 
+          Then(s"The correct VAT flat rate is shown - $expectedOutcome")
+          resultPage.outcome() should be(expectedOutcome)
+        }
     }
-
-    Scenario("User pays annually and is not a limited cost business") {
-
-      Given("my VAT return period is annual")
-      vatReturnPeriod.goTo()
-      vatReturnPeriod.submit("annually")
-
-      And("my turnover for the year is £1000")
-      turnover.submit("1000")
-
-      When("my cost of goods for the year is £1000")
-      costOfGoods.submit("1000")
-
-      Then("I can use the VAT flat rate")
-      result.outcome() should be(result.useUniqueVATFlatRate)
-
-    }
-
-    Scenario("User pays quarterly and is a limited cost business") {
-
-      Given("my VAT return period is quarterly")
-      vatReturnPeriod.goTo()
-      vatReturnPeriod.submit("quarterly")
-
-      And("my turnover for the quarter is £1000")
-      turnover.submit("1000")
-
-      When("my cost of goods for the quarter is £249")
-      costOfGoods.submit("249")
-
-      Then("I can use the 16.5% VAT flat rate")
-      result.outcome() should be(result.useSetVATFlatRate)
-
-    }
-
-    Scenario("User pays quarterly and is not a limited cost business") {
-
-      Given("my VAT return period is quarterly")
-      vatReturnPeriod.goTo()
-      vatReturnPeriod.submit("quarterly")
-
-      And("my turnover for the quarter is £1000")
-      turnover.submit("1000")
-
-      When("my cost of goods for the quarter is £250")
-      costOfGoods.submit("250")
-
-      Then("I can use the VAT flat rate")
-      result.outcome() should be(result.useUniqueVATFlatRate)
-
-    }
-
   }
-
 }
